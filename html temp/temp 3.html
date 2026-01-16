@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Tarun Kumar Sahoo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: #000;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    section { padding: 80px 10%; min-height: 100vh; position: relative; z-index: 2; }
+    h1, h2, h3 { font-weight: 600; }
+
+    /* Scroll-Flow Gradient Background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(-45deg, #0f0f0f, #111827, #1f2937, #0f172a);
+      background-size: 400% 400%;
+      z-index: 0;
+      transition: background-position 0.1s linear;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      padding: 15px 10%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      font-weight: 500;
+      color: #fff;
+      transition: color .3s;
+    }
+    nav a:hover { color: #38bdf8; }
+
+    /* Hero Section */
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #home h1 { font-size: 3rem; }
+    #home p { font-size: 1.2rem; margin-top: 10px; color: #ddd; }
+
+    /* About */
+    #about p { max-width: 800px; margin-bottom: 20px; color: #ccc; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 15px; }
+    .skill {
+      background: rgba(255,255,255,0.05);
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: transform .3s;
+    }
+    .skill:hover { transform: translateY(-3px); }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      transition: transform .3s, background .3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(56,189,248,0.1);
+    }
+
+    /* Contact */
+    .contact-links a {
+      margin-right: 20px;
+      font-size: 1.2rem;
+      color: #38bdf8;
+      font-weight: 500;
+      transition: opacity .3s;
+    }
+    .contact-links a:hover { opacity: 0.8; }
+
+    /* Smooth Scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Landing Section -->
+  <section id="home">
+    <h1>Tarun Kumar Sahoo</h1>
+    <p>2nd-Year CSE Student | Aspiring Data Scientist | Designer | Content Writer | Gym Trainer</p>
+    <p>"Building, Learning, and Growing every single day."</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm <strong>Tarun Kumar Sahoo</strong>, a passionate 2nd-year Computer Science and Engineering student with a strong curiosity 
+      for technology, problem-solving, and creative expression. My journey in computer science has allowed me to explore 
+      the fascinating fields of <em>data science, design, and content creation</em>, while also pursuing my passion for fitness as a gym trainer.  
+      I enjoy building meaningful projects that combine technical expertise with creativity and design. My interests include 
+      analyzing data to uncover insights, developing visually appealing and user-friendly applications, and expressing ideas 
+      through impactful writing.  
+      Outside academics, I believe in continuous growth — whether it's by improving my coding skills, pushing limits in the gym, 
+      or exploring new ways to communicate and design. My long-term vision is to integrate technology, creativity, and discipline 
+      to create impactful solutions and inspire others.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>📊 Data Visualization Dashboard</h3>
+        <p>A Python-based project using Matplotlib and Seaborn to analyze datasets and present insights with clean visualizations.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Responsive Portfolio Website</h3>
+        <p>A personal website built with React & Tailwind CSS to showcase projects, skills, and experience with modern design principles.</p>
+      </div>
+      <div class="card">
+        <h3>📝 Content Management Blog</h3>
+        <p>A blog application developed using Node.js and MongoDB, allowing users to create, manage, and share posts with ease.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Functional Competencies</h3>
+    <div class="skills">
+      <span class="skill">Problem Solving</span>
+      <span class="skill">Content Writing</span>
+      <span class="skill">Design Thinking</span>
+      <span class="skill">Communication</span>
+    </div>
+    <h3>Technical Tools</h3>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">HTML & CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">React</span>
+      <span class="skill">Tailwind CSS</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">MongoDB</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:seeitupon@gmail.com">Email</a>
+      <a href="https://github.com/shio254" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/tarunkumar222205/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Scroll Background Script -->
+  <script>
+    const bg = document.body;
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY;
+      // Change gradient flow speed with scroll
+      bg.style.setProperty('--scroll', scrollPos);
+      document.body.style.setProperty(
+        'background-position',
+        `${scrollPos/20}% ${scrollPos/40}%`
+      );
+      document.body.style.setProperty(
+        'background',
+        `linear-gradient(-45deg, #0f0f0f, #111827, #1f2937, #0f172a)`
+      );
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Chingis Khan Restaurant</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        li strong {
+            display: block;
+            font-size: 1.1em;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="file:///C:/Users/kumar/Downloads/Rainy%20Evening%20Cafe.jpeg" 
+         alt="Restaurant Image" width="300" height="200">
+    <h1>The Chingis Khan Restaurant</h1>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Order Form</a>
+    </nav>
+</header>
+
+<main>
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <article>
+            <img src="file:///C:/Users/kumar/Downloads/Restaurant%20aesthetic.jpeg" 
+                 alt="Menu Image" width="300" height="200">
+
+            <h3>Special Dishes</h3>
+
+            <ul>
+                <li>
+                    <strong>Grilled Lamb Chops – $25</strong>
+                    <p>Tender lamb chops, herb-marinated and perfectly grilled.</p>
+                </li>
+
+                <li>
+                    <strong>Beef Stroganoff – $20</strong>
+                    <p>Soft beef slices in a creamy mushroom sauce.</p>
+                </li>
+
+                <li>
+                    <strong>Chicken Kebab – $18</strong>
+                    <p>Spiced chicken skewers, grilled for a smoky finish.</p>
+                </li>
+
+                <li>
+                    <strong>Vegetable Platter – $15</strong>
+                    <p>Fresh seasonal vegetables, lightly grilled and seasoned.</p>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+
+        <article>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" minlength="5" required>
+
+                <label>
+                    <input type="radio" name="extras" value="sides">
+                    Sides
+                </label>
+
+                <label>
+                    <input type="radio" name="extras" value="addons">
+                    Add-ons
+                </label>
+
+                <label for="comments">Any Special Request</label>
+                <textarea id="comments" rows="4"></textarea>
+
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>Made With Love</p>
+    <p>&copy; 2024 The Chingis Khan Restaurant</p>
+</footer>
+
+</body>
+</html>

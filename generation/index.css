@@ -1,0 +1,83 @@
+body {
+    background-color: #e0f7fa;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+#garden-plot {
+    height: 200px;
+    background: #f1f8e9;
+    border-bottom: 5px solid #795548; /* The ground */
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align plant to bottom */
+    overflow: hidden;
+}
+
+/* The Plant Base */
+#plant {
+    font-size: 80px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy effect */
+    transform-origin: bottom center; /* Grow from the ground up */
+}
+
+/* Plant Stages (using Emojis) */
+.seed::after { content: "🟤"; font-size: 40px; }
+.sprout::after { content: "🌱"; }
+.growing::after { content: "🌿"; }
+.bloomed::after { content: "🌻"; }
+.dead::after { content: "🥀"; filter: grayscale(100%); }
+
+/* Animations */
+.grow-animation {
+    animation: popUp 0.6s ease-out forwards;
+}
+
+@keyframes popUp {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.wither-animation {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px) rotate(-10deg); }
+    75% { transform: translateX(10px) rotate(10deg); }
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #2e7d32;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input {
+    padding: 10px;
+    width: 60px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

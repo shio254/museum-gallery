@@ -1,0 +1,33 @@
+<!--Create a new file called welp.html.
+
+After setting up the file, add a <form> element in the <body>.
+
+Let's include this information (in order):
+
+The reviewer's name (first, last, nickname, doesn't matter).*
+The name of what they're reviewing (film name, book title, etc.).*
+Three "radio" buttons that ask if the reviewer would try again.
+An <input> to offer a rating (1 out of 5).*
+A <textarea> element for the reviewer to write comments (no more than 250 characters).
+An input type of "submit" that says "Submit Review"-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Reviewer's name: <input type="text" required></label> <br> <br>
+        <label>Review:<input type="text" required></label> <br>
+        Would you try again?<br>
+        <input type="radio" name="tryagain" value="yes"> Yes<br>
+        <input type="radio" name="tryagain" value="no"> No<br>
+        <input type="radio" name="tryagain" value="maybe"> Maybe<br>
+        <label>Rating (1 out of 5): <input type="number" min="1" max="5" required></label> <br>
+        <label>Comments (250 characters max):</label> <br>
+        <textarea name="comments" placeholder="Enter your comments here"></textarea> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

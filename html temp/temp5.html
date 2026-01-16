@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Table</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+    }
+    table{
+      width:100%;
+      border-collapse: collapse;
+    }
+    th, td{
+      border:1px solid black;
+      padding:4px;
+      text-align:center;
+      font-size:14px;
+    }
+    th{
+      background:#f2f2f2;
+    }
+    .double-header th{
+      border-bottom:1px solid black;
+    }
+    .sub-header th{
+      border-top:1px solid black;
+      font-size:12px;
+      font-weight:normal;
+    }
+  </style>
+</head>
+<body>
+  <h3 style="text-align:center;">STUDENT'S LIST</h3>
+  <table>
+    <tr class="double-header">
+      <th rowspan="2">Sl.No</th>
+      <th colspan="2">Name</th>
+      <th rowspan="2">Course</th>
+      <th colspan="4">Address</th>
+      <th rowspan="2">DOB</th>
+      <th colspan="2">Contact</th>
+    </tr>
+    <tr class="sub-header">
+      <th>F.N</th>
+      <th>L.N</th>
+      <th>Location</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Pin</th>
+      <th>Mobile</th>
+      <th>E-mail</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Tarun</td>
+      <td>Kumar</td>
+      <td>Data Science</td>
+      <td>Sri Sri Vihar</td>
+      <td>Cuttack</td>
+      <td>Odisha</td>
+      <td>754006</td>
+      <td>22/05/2005</td>
+      <td>8455074959</td>
+      <td>taruun@gmail.com</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Deva</td>
+      <td>Nandi</td>
+      <td>Data Science</td>
+      <td>Sri Sri Vihar</td>
+      <td>Cuttack</td>
+      <td>Odisha</td>
+      <td>754006</td>
+      <td>7/06/2005</td>
+      <td>758423497</td>
+      <td>deva@gmail.com</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Ananya</td>
+      <td>Mohanty</td>
+      <td>Data Science</td>
+      <td>Sri Sri Vihar</td>
+      <td>Cuttack</td>
+      <td>Odisha</td>
+      <td>754006</td>
+      <td>23/07/2004</td>
+      <td>9845123213</td>
+      <td>anu@gmail.com</td>
+    </tr>
+  </table>
+</body>
+</html>
